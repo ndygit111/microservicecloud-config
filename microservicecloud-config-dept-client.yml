@@ -41,7 +41,7 @@ eureka:
     prefer-ip-address: true
 
 info:
-   app.name:  atguigu-microservicecloud-springcloudconfig02
+   app.name:  atguigu-microservicecloud-springcloudconfig01
    company.name:  www.atguigu.com
    build.artifactId:  $project.artifactId$
    build.version:  $project.version$
