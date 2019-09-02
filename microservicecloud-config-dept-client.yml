@@ -5,9 +5,7 @@
 ---
 server:
   port:  8001
-
 spring:  
-  
   profiles:  dev 
   application:
    name:  microservicecloud-config-dept-client
@@ -22,7 +20,6 @@ spring:
     initial-size: 5
     max-total: 5
     max-wait-millis: 200
-
 mybatis:
    config-location: classpath:mybatis/mybatis.cfg.xml
    type-aliases-package: com.atguigu.springcloud.entities
@@ -30,9 +27,7 @@ mybatis:
    - classpath: mybatis/mapper/**/*.xml
 
 eureka:
-  
   client:  #客户端注册进eureka服务列表内
-  
    service-url:
      defaultZone: http://eureka7001.com:7001/eureka
 
@@ -48,9 +43,7 @@ info:
 ---
   server:
   port:  8001
-
 spring:  
-  
   profiles:  test
   application:
    name:  microservicecloud-config-dept-client
@@ -65,7 +58,6 @@ spring:
     initial-size: 5
     max-total: 5
     max-wait-millis: 200
-
 mybatis:
    config-location: classpath:mybatis/mybatis.cfg.xml
    type-aliases-package: com.atguigu.springcloud.entities
@@ -74,8 +66,7 @@ mybatis:
    
 eureka:
   client:  #客户端注册进eureka服务列表内
-  
-   service-url:
+    service-url:
      defaultZone: http://eureka7001.com:7001/eureka
 
   instance:
